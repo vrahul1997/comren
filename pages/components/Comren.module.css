@@ -1,0 +1,55 @@
+.comren_container {
+    margin: 20px;
+}
+
+.comren_heading {
+    margin-top: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.comren_divider {
+    color: rgb(253, 0, 0);
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+.content_container {
+    margin: 40px;
+}
+
+.comren_content {
+    font-size: 0.9em;
+}
+
+.comren_mem_list {
+    margin: 7px;
+}
+
+.comren_mem_text {
+    color: #1aa1ab;
+}
+
+.comren_mem_text:hover {
+    color: #1aa1ab;
+    font-weight: bolder;
+}
+
+.comren_icon_container {
+    display: flex;
+    height: 200px;
+}
+
+@media only screen and (max-width: 992px) {
+    .comren_icon_container {
+        justify-content: center;
+        margin: 10px;
+    }
+}
+
+.comren_icon {
+    margin: 30px;
+}
