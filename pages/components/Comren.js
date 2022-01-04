@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Comren.module.css";
-import { COMRENMEMBERS } from "../constants";
+import { COMRENMEMBERS } from "../../lib/constants";
 
 const Comren = () => {
   return (

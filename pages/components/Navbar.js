@@ -14,6 +14,7 @@ const Navbar = () => {
               className={styles.comren_image + " navbar-brand"}
               href="#"
               src="/common/comren.png"
+              alt=""
             />
           </div>
           <div

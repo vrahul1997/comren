@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import styles from "./Map.module.css";
 import mapboxGl from "mapbox-gl";
-import { COMRENMEMBERS } from "../constants";
+import { COMRENMEMBERS } from "../../lib/constants";
 
 mapboxGl.accessToken =
   "pk.eyJ1IjoidmlqYXlyYWh1bCIsImEiOiJja3gwc3F1ZjQxN3g1MndramM5czF4bWhpIn0.cMgNRG1nIu2uI24PVYb1Wg";
