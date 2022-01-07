@@ -14,8 +14,9 @@ const Map = () => {
       style: "mapbox://styles/mapbox/streets-v11",
       center: [-100.53890969965835, 56.01588857552511],
       zoom: 3,
-      minZoom: 3,
       attributionControl: false,
+      scrollZoom: false,
+      doubleClickZoom: false,
     });
 
     // adding markers
@@ -49,7 +50,7 @@ const Map = () => {
 
     // to make the map padded between the last two members
     map.fitBounds([COMRENMEMBERS.BCIT.coord, COMRENMEMBERS.MemorialUniversity.coord], {
-      padding: 70,
+      padding: 50,
     });
   }, []);
 

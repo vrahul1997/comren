@@ -5,6 +5,10 @@ import { Squash as Hamburger } from "hamburger-react";
 const Navbar = () => {
   const [isOpen, setOpen] = useState(false);
 
+  const scrollToComrenRef = () => {
+    document.getElementById("aboutRef").scrollIntoView({ behavior: "smooth", block: "center" });
+  };
+
   return (
     <div>
       <nav className={styles.navbar_container + " navbar  navbar-expand-lg navbar-light"}>
@@ -30,12 +34,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div className="navbar-nav col-12">
               <div className={styles.comren_nav_items_div + " col-3"}>
-                <button className={styles.nav_items_button}>
-                  <span>Home</span>
-                </button>
-              </div>
-              <div className={styles.comren_nav_items_div + " col-3"}>
-                <button className={styles.nav_items_button}>
+                <button onClick={scrollToComrenRef} className={styles.nav_items_button}>
                   <span>About</span>
                 </button>
               </div>
@@ -48,6 +47,16 @@ const Navbar = () => {
                 <button className={styles.nav_items_button}>
                   <span>Research</span>
                 </button>
+              </div>
+              <div className={styles.comren_nav_items_div + " col-3"}>
+                <a
+                  href="https://crdig.ulaval.ca/ecole-internationale-en-leves-hydrographiques/?lang=en"
+                  target="_blank"
+                >
+                  <button className={styles.nav_items_button_fall_school}>
+                    <span>Fall-School</span>
+                  </button>
+                </a>
               </div>
             </div>
           </div>

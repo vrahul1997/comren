@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import styles from "./Comren.module.css";
 import { COMRENMEMBERS } from "../../lib/constants";
 
@@ -18,7 +18,7 @@ const Comren = () => {
             and strengthen teaching programs and increase the number of graduates in the field of
             marine geomatics and ocean mapping.
           </p>
-          <p>It brings together the following institutions:</p>
+          <p id="aboutRef">It brings together the following institutions:</p>
           {Object.keys(COMRENMEMBERS).map((k, index) => {
             console.log("k: ", k);
             console.log("index: ", index);
@@ -34,6 +34,28 @@ const Comren = () => {
         <div className={styles.comren_icon_container + " col-lg-4"}>
           <img className={styles.comren_icon} src="/common/comren.png" alt="" />
         </div>
+      </div>
+      <h3 className={styles.comren_subheading}>What is COMREN?</h3>
+      <p className={styles.comren_divider}>________</p>
+      <div className={styles.comren_youtube}>
+        <iframe
+          width="853"
+          height="480"
+          src={`https://www.youtube.com/embed/_h8E9ff8OuU`}
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Embedded youtube"
+        />
+      </div>
+      <h3 className={styles.comren_subheading}>COMREN Student Travel Funding</h3>
+      <p className={styles.comren_divider}>________</p>
+      <div className={styles.comren_funding_image_container}>
+        <img
+          className={styles.comren_funding_image}
+          src="/common/student_funding_comren.jpeg"
+          alt=""
+        />
       </div>
     </div>
   );

@@ -9,7 +9,7 @@
 }
 
 .comren_divider {
-    color: rgb(253, 0, 0);
+    color: lightsalmon;
     text-align: center;
     font-size: large;
     font-weight: bold;
@@ -41,15 +41,79 @@
 .comren_icon_container {
     display: flex;
     height: 200px;
+    margin-top: 80px;
 }
 
 @media only screen and (max-width: 992px) {
     .comren_icon_container {
         justify-content: center;
         margin: 10px;
+        margin-right: 70px;
+        margin-top: 30px;
+        margin-bottom: 30px;
     }
 }
 
 .comren_icon {
     margin: 30px;
+}
+
+.comren_subheading{
+    margin-top: 130px;
+    text-align: center;
+    color: steelblue;
+}
+
+@media only screen and (min-width: 992px) {
+    .comren_youtube {
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        position: relative;
+        height: 0;
+        margin: 40px;
+        border-radius: 20px;
+        margin-bottom: 80px;
+    }
+
+    .comren_youtube iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+
+@media only screen and (max-width: 992px) {
+    .comren_youtube {
+        margin: 40px;
+        overflow: hidden;
+        padding-bottom: 56.25%;
+        border-radius: 20px;
+        position: relative;
+        height: 0;
+    }
+
+    .comren_youtube iframe {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+
+.comren_funding_image_container{
+    margin: 40px;
+    text-align: center;
+}
+
+
+.comren_funding_image{
+    border-radius: 20px;
+    max-width: 100%;
+    height: auto;
+   
 }
