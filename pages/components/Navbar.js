@@ -52,6 +52,7 @@ const Navbar = () => {
                 <a
                   href="https://crdig.ulaval.ca/ecole-internationale-en-leves-hydrographiques/?lang=en"
                   target="_blank"
+                  rel="noreferrer"
                 >
                   <button className={styles.nav_items_button_fall_school}>
                     <span>Fall-School</span>
