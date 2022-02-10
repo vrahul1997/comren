@@ -1,0 +1,16 @@
+.publication_heading {
+    margin-top: 120px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.publication_list {
+    margin: 40px;
+    font-style: italic;
+}
+
+.project_list {
+    margin: 40px;
+    font-style: italic;
+    font-weight: 500;
+}

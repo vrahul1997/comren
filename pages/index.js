@@ -1,16 +1,18 @@
-import Navbar from "./components/Navbar";
-import Map from "./components/Map";
-import Comren from "./components/Comren";
-import { useRef } from "react";
+import Navbar from './components/Navbar';
+import Map from './components/Map';
+import Comren from './components/Comren';
+import { useEffect } from 'react';
 
 export default function Home() {
-  const comrenAbout = useRef(null);
+    useEffect(() => {
+        document.title = 'COMREN';
+    });
 
-  return (
-    <div>
-      <Navbar />
-      <Map />
-      <Comren />
-    </div>
-  );
+    return (
+        <div>
+            <Navbar />
+            <Map />
+            <Comren />
+        </div>
+    );
 }

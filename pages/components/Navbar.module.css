@@ -29,7 +29,7 @@
     }
 }
 
-.menu_icon{
+.menu_icon {
     padding: 30px;
 }
 
@@ -44,11 +44,11 @@
     }
 }
 
-
 @media only screen and (min-width: 992px) {
     .comren_nav_items_div {
         text-align: right;
         border-radius: 20px;
+        padding-right: 20px;
     }
 }
 
@@ -57,7 +57,7 @@
     border-radius: 4px;
     background-color: steelblue;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     font-size: 15px;
     padding: 11px;
@@ -65,49 +65,50 @@
     transition: all 0.5s;
     cursor: pointer;
     margin: 4px;
-  }
-  
-  .nav_items_button span {
+    margin-top: 5px;
+}
+
+.nav_items_button span {
     cursor: pointer;
     display: inline-block;
     position: relative;
     transition: 0.5s;
-  }
-  
-  .nav_items_button span:after {
+}
+
+.nav_items_button span:after {
     content: '\00bb';
     position: absolute;
     opacity: 0;
     top: 0;
     right: -20px;
     transition: 0.5s;
-  }
-  
-  .nav_items_button:hover span {
+}
+
+.nav_items_button:hover span {
     padding-right: 15px;
-  }
-  
-  .nav_items_button:hover span:after {
+}
+
+.nav_items_button:hover span:after {
     opacity: 1;
     right: 0;
-  }
+}
 
-  .nav_items_button_fall_school {
+.nav_items_button_fall_school {
     display: inline-block;
     border-radius: 4px;
     background-color: steelblue;
     border: none;
-    color: #FFFFFF;
+    color: #ffffff;
     text-align: center;
     font-size: 15px;
-    padding: 11px;
+    padding: 10px;
     width: 100px;
     transition: all 0.5s;
     cursor: pointer;
-    margin: 4px;
-  }
+    margin: 5px;
+}
 
-  .nav_items_button_fall_school:hover {
-      background-color: lightslategray;
-      color: black;
-  } 
+.nav_items_button_fall_school:hover {
+    background-color: lightslategray;
+    color: black;
+}
