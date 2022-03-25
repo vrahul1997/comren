@@ -39,9 +39,11 @@ const Navbar = () => {
                                 </Link>
                             </div>
                             <div className={styles.comren_nav_items_div + ' col-3'}>
-                                <button className={styles.nav_items_button}>
-                                    <span>Contact</span>
-                                </button>
+                                <Link href="https://glacial-caverns-39747.herokuapp.com/admin">
+                                    <button className={styles.nav_items_button}>
+                                        <span>Admin</span>
+                                    </button>
+                                </Link>
                             </div>
                             <div className={styles.comren_nav_items_div + ' col-3'}>
                                 <Link href="/Publications">
