@@ -53,13 +53,13 @@ const Publications = ({ pub_data, project_data }) => {
 
 export async function getStaticProps() {
     const publication_response = await axios
-        .get('http://localhost:8000/comren_publications')
+        .get('https://glacial-caverns-39747.herokuapp.com/comren_publications')
         .then((response) => {
             return response.data;
         });
 
     const project_response = await axios
-        .get('http://localhost:8000/comren_projects')
+        .get('https://glacial-caverns-39747.herokuapp.com/comren_projects')
         .then((response) => {
             return response.data;
         });
