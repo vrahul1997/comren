@@ -11,13 +11,13 @@ const Navbar = () => {
             <nav className={styles.navbar_container + ' navbar  navbar-expand-lg navbar-light'}>
                 <div className="container-fluid">
                     <div className={styles.comren_image_container + ' col-6'}>
-                        <a href="/#">
+                        <Link href="/#">
                             <img
                                 className={styles.comren_image + ' navbar-brand'}
                                 src="/common/comren.png"
                                 alt=""
                             />
-                        </a>
+                        </Link>
                     </div>
                     <div
                         className={styles.menu_icon_container}
